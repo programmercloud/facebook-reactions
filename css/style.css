@@ -8,10 +8,8 @@ body {
   font-family: arial, sans-serif;
 }
 
-.text-desc,
 [class*="reaction-"],
-.field-reactions,
-.field-reactions:checked:focus ~ .text-desc {
+.field-reactions {
   clip: rect(1px, 1px, 1px, 1px);
   overflow: hidden;
   position: absolute;
@@ -19,7 +17,6 @@ body {
   left: 0;
 }
 
-.field-reactions:focus ~ .text-desc,
 .box:hover [class*="reaction-"],
 .field-reactions:checked ~ [class*="reaction-"] {
   clip: auto;
@@ -34,15 +31,6 @@ body {
   text-align: center;
   font-size: 16px;
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-
-.text-desc {
-  font-weight: normal;
-  text-align: center;
-  transform: translateY(-50px);
-  white-space: nowrap;
-  font-size: 13px;
-  width: 100%;
 }
 
 [class*="reaction-"] {
@@ -87,10 +75,6 @@ body {
 
 .field-reactions:checked:focus ~ .label-reactions {
   border-color: transparent;
-}
-
-.field-reactions:checked:focus ~ .text-desc {
-  background: red;
 }
 
 .label-reactions {
